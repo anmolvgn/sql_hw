@@ -1,0 +1,28 @@
+
+
+insert into products (itemId, productName, deptName, priceUSD, stockQuant)
+values (2, Samsung_Galaxy, SAMSUNGProds, 199, 5000);
+
+insert into products (itemId, productName, deptName, priceUSD, stockQuant)
+values (3, Nokia_Brick, NokiaProds, 50, 500);
+
+insert into products (itemId, productName, deptName, priceUSD, stockQuant)
+values (4, MacAir, AppleProds, 1000, 50);
+
+insert into products (itemId, productName, deptName, priceUSD, stockQuant)
+values (5, SurfacePro, WindowsProds, 1500, 200);
+
+insert into products (itemId, productName, deptName, priceUSD, stockQuant)
+values (6, Lenovo_IdeaPad, IBMProds, 800, 1500);
+
+insert into products (itemId, productName, deptName, priceUSD, stockQuant)
+values (7, Vizio_TV, VizioProds, 600, 25);
+
+insert into products (itemId, productName, deptName, priceUSD, stockQuant)
+values (8, DELL_INSPIRON, DellProds, 350, 500);
+
+insert into products (itemId, productName, deptName, priceUSD, stockQuant)
+values (9, iPhone_X, AppleProds, 1000, 10);
+
+insert into products (itemId, productName, deptName, priceUSD, stockQuant)
+values (10, LGPhone, LGgProds, 250, 10000);
