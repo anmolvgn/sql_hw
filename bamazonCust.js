@@ -35,7 +35,23 @@ inquirer.prompt([
 //     message: 'how many units would you like to purchase?',
 //     name: 'stockQuant'
 // }
-]).then(function lookup(item){
-    var item = item.itemId;
-    console.log(JSON.stringify(itemId));
+]).then(function (itemId){
+    // var item = item.itemId;
+    console.log(itemId.itemId);
 });
+
+
+
+// inquirer.prompt([
+// {
+//     type: 'input',
+//     message: 'how many units would you like to purchase?',
+//     name: 'stockQuant'
+// }
+// ]).then(function buy(purchQuant){
+//     var purchase = purchQuant.stockQuant;
+//     if( purchase>= stockQuant){
+//         console.log('sorry we are unable to fulfill your order at the time.'/n, 'Please come again at a later time.' /n, 'Thank you!');
+//     }
+//     else console.log('thanks for your order. Please visit us again soon!');
+// });
