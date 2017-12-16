@@ -1,20 +1,38 @@
 //sql connection setup
-var sql = require('mysql');
 
-var connection = sql.createConnection({
-    host: 'localhost',
-    port:3306,
-    user:'root',
-    password: 'Stapleton2240',
-    database: 'b_amazon'
-});
+var express = require('express');
+var app = express();
 
-connection.connect(function(err){
-    if (err) throw err;
+app.get('/', function(req, res){
+    var sql = require('mysql');
+
+    var config = {
+        user: 'root',
+        host: 'localhost',
+        port:3306,
+        password: 'Stapleton2240',
+        database: 'b_amazon'
+    };
+
+    sql.connect(config, function(err){
+        if (err) throw err;
+    
+        var req = new sql.request();
+        
+        request.query('select * from b_amazon', function(err,itemId){
+            if (err) console.log(err);
+            res.send(itemId);
+        });
+    
+    });
+
 //    console.log('connect as id'+ connection.threadId);
-    connection.end()
+    
 });
 
+var server = app.listen(3306, function(){
+    console.log('listening');
+});
 //logic interface
 // var nodeArgs = process.argv;
 // var question1 = process.argv[2];
@@ -37,7 +55,7 @@ inquirer.prompt([
 // }
 ]).then(function (itemId){
     // var item = item.itemId;
-    console.log(itemId.itemId);
+    console.log(itemId);
 });
 
 
